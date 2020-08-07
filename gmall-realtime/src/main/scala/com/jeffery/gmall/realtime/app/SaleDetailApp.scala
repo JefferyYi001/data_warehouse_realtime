@@ -200,6 +200,7 @@ object SaleDetailApp {
     })
   }
 
+
   def main(args: Array[String]): Unit = {
     val conf: SparkConf = new SparkConf().setAppName("SaleDetailApp").setMaster("local[*]")
     val ssc = new StreamingContext(conf, Seconds(3))
